@@ -19,14 +19,10 @@ describe("Tests for sorting movies", () => {
 
     // expect(data[0].Title).toBe(result[0]);
     // expect(data[1].Title).toBe(result[1]);
-    // expect(data[2].Title).toBe(result[2]);
-    // expect(data[3].Title).toBe(result[3]);
-    // expect(data[4].Title).toBe(result[4]);
 
     for (let i = 0; i < data.length; i++) {
       expect(data[i].Title).toBe(result[i]);
     }
-    console.log(result);
   });
 
   test("Should sort movie titles based on descending order", () => {
@@ -41,13 +37,9 @@ describe("Tests for sorting movies", () => {
 
     // expect(data[1].Title).toBe(result[1]);
     // expect(data[2].Title).toBe(result[2]);
-    // expect(data[3].Title).toBe(result[3]);
-    // expect(data[4].Title).toBe(result[4]);
 
     for (let i = 0; i < data.length; i++) {
       expect(data[i].Title).toBe(result[i]);
     }
-    console.log(result);
-    console.log(data);
   });
 });
