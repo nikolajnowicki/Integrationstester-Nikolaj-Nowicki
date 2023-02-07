@@ -13,7 +13,7 @@ beforeEach(() => {
 
 jest.mock("../services/movieservice");
 
-describe("Testing createHtml function", () => {
+describe("CreateHtml function", () => {
   test("should create html correctly", () => {
     //Arrange
     document.body.innerHTML = `
@@ -51,25 +51,6 @@ describe("Testing displayNoResult", () => {
     //Assert
     expect(container.innerHTML).toContain("p");
     expect(assert).toBe("Inga sökresultat att visa");
-  });
-});
-
-describe("tests for displayNoResult function", () => {
-  test('should create paragraph with "no results" message', () => {
-    // arrange
-    document.body.innerHTML = `<div id="movie-container"></div>`;
-
-    let container = document.querySelector(
-      "#movie-container"
-    ) as HTMLDivElement;
-
-    // act
-    movieApp.displayNoResult(container);
-
-    // assert
-    let message = document.querySelector("#movie-container > p")?.innerHTML;
-
-    expect(message).toBe("Inga sökresultat att visa");
   });
 });
 
